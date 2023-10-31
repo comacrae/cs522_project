@@ -38,6 +38,7 @@ function MyTabs() {
               <Stack.Screen name="Flashcards" component={FlashcardsScreen} />
               <Stack.Screen name="ToDo" component={ToDoScreen} />
               <Stack.Screen name="Calls" component={CallsScreen} />
+              <Stack.Screen name="Timer" component={TimerScreen} />
             </Stack.Navigator>
           </NavigationContainer>
         </HeaderButtonsProvider>

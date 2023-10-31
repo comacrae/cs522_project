@@ -5,6 +5,7 @@ import {Text, Button, ProgressBar} from 'react-native-paper';
 import {View, StyleSheet} from 'react-native';
 import {useTimer} from 'react-timer-hook';
 import CircularProgress from 'react-native-circular-progress-indicator';
+import {MaterialHeaderButtons} from './Header';
 
 const styles = StyleSheet.create({
   container: {
@@ -65,6 +66,14 @@ function MyTimer({expiryTimestamp}) {
 
 function TimerScreen({navigation}) {
   const time = new Date();
+  React.useLayoutEffect(() => {
+    navigation.setOptions({
+      headerRight: () => (
+        <MaterialHeaderButtons navigation={navigation}></MaterialHeaderButtons>
+      ),
+      title: 'Calls',
+    });
+  }, [navigation]);
   return <MyTimer />;
 }
 

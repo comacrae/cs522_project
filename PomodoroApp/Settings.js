@@ -1,15 +1,16 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
-import {DefaultHeader} from './Header';
+import {MaterialHeaderButtons} from './Header';
 
 function SettingsScreen({navigation}) {
   React.useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => (
-        <DefaultHeader navigation={navigation}></DefaultHeader>
+        <MaterialHeaderButtons navigation={navigation}></MaterialHeaderButtons>
       ),
+      title: 'Calls',
     });
-  });
+  }, [navigation]);
   return <Text>Settings</Text>;
 }
 
