@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
 
-function CallsScreen() {
+function CallsScreen({navigation}) {
   return <Text>Calls</Text>;
 }
 

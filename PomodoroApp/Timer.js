@@ -63,7 +63,7 @@ function MyTimer({expiryTimestamp}) {
   );
 }
 
-function TimerScreen() {
+function TimerScreen({navigation}) {
   const time = new Date();
   return <MyTimer />;
 }

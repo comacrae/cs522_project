@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
 
-function FlashcardsScreen() {
+function FlashcardsScreen({navigation}) {
   return <Text>Flashcards</Text>;
 }
 

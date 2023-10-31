@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
 
-function ToDoScreen() {
+function ToDoScreen({navigation}) {
   return <Text>ToDo</Text>;
 }
 
