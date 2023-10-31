@@ -34,6 +34,13 @@ export const MaterialHeaderButtons = props => {
         iconName="home"
         onPress={navigation => props.navigation.navigate('Home')}
       />
+      <OverflowMenu
+        OverflowIcon={
+          <MaterialCommunityIcons name="menu" color="blue" size={23} />
+        }>
+        <HiddenItem title="test1"></HiddenItem>
+        <HiddenItem title="test2"></HiddenItem>
+      </OverflowMenu>
     </HeaderButtons>
   );
 };
